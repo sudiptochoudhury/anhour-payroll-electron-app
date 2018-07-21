@@ -1,0 +1,26 @@
+{
+  "name": "sudiptochoudhury/anhour-payroll-electron-app",
+  "productName": "AnHour Solution Payroll Manager",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sudiptochoudhury/anhour-payroll-electron-app.git"
+  },
+  "author": "Sudipto Choudhury <mail@sudipto.net>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sudiptochoudhury/anhour-payroll-electron-app"
+  },
+  "homepage": "https://github.com/sudiptochoudhury/anhour-payroll-electron-app",
+  "devDependencies": {
+    "electron-debug": "^0.2.1",
+    "electron-prebuilt": "^0.33.0",
+    "electron-prebuilt-compile": "^2.0.4"
+  },
+  "dependencies": {}
+}
