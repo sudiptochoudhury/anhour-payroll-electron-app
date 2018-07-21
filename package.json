@@ -41,10 +41,17 @@
         ]
       },
       "electronPackagerConfig": {
-        "packageManager": "npm"
+        "packageManager": "npm",
+        "executableName": "AnHourPayroll",
+        "icon": "./packager/anhour.ico",
+        "prune": true
       },
       "electronWinstallerConfig": {
-        "name": "AnHourSolutionPayrollManager"
+        "name": "AnHourSolutionPayrollManager",
+        "iconUrl": "./packager/anhour.ico",
+        "setupIcon": "./packager/anhour.ico",
+        "authors": "Sudipto Choudhury",
+        "setupExe": "AnHourPayroll-Installer.exe"
       },
       "electronInstallerDebian": {},
       "electronInstallerRedhat": {},
@@ -68,6 +75,7 @@
     "babel-preset-react": "^6.24.1",
     "electron-forge": "^5.2.2",
     "electron-prebuilt-compile": "2.0.4",
+    "electron-winstaller": "^2.6.4",
     "eslint": "^3.19.0",
     "eslint-config-airbnb": "^15.1.0",
     "eslint-plugin-import": "^2.13.0",
