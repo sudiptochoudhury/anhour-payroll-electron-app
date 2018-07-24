@@ -2,15 +2,15 @@
   "name": "anhour-payroll-electron-app",
   "productName": "AnHourSolutionPayrollManager",
   "version": "1.0.0",
-  "description": "My Electron application description",
+  "description": "AnHour Solution Payroll Manager",
   "main": "src/index.js",
   "scripts": {
     "strt": "electron .",
     "start": "electron-forge start",
     "package32": "electron-forge package --arch=ia32",
     "package": "electron-forge package",
-    "make32": "electron-forge make --arch=ia32",
-    "make": "electron-forge make",
+    "make32": "electron-forge make --arch=ia32 --skip-package",
+    "make": "electron-forge make --skip-package",
     "publish32": "electron-forge publish --arch=ia32",
     "publish": "electron-forge publish",
     "lint": "eslint src --color"
@@ -41,14 +41,16 @@
         ]
       },
       "electronPackagerConfig": {
+        "ignore": ["\\.idea"],
         "packageManager": "npm",
-        "executableName": "AnHourPayroll",
+        "executableName": "AnHourSolutionPayrollManager",
         "icon": "./packager/anhour.ico",
         "prune": true
       },
       "electronWinstallerConfig": {
+        "loadingGif": "./packager/preloader.gif",
+        "iconUrl  ": "http://uxel.tech/share/anhour.ico",
         "name": "AnHourSolutionPayrollManager",
-        "iconUrl": "./packager/anhour.ico",
         "setupIcon": "./packager/anhour.ico",
         "authors": "Sudipto Choudhury",
         "setupExe": "AnHourPayroll-Installer.exe"
