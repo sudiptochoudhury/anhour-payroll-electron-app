@@ -25,8 +25,8 @@ const showSplash = () => {
 const createWindow = () => {
   // Create the browser window.
   mainWindow = new BrowserWindow({
-    width: 800,
-    height: 600,
+    width: 950,
+    height: 700,
     show: false,
     webPreferences: {
       nodeIntegration: false
